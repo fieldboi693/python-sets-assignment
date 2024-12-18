@@ -15,3 +15,12 @@ print("Destinations unique to our airline:", unique_to_our_airline)
 universal_destinations = {"LAX", "JFK", "CDG", "DXB", "LHR", "BKK", "SYD", "NRT"}
 destinations_neither_airline_flies_to = universal_destinations.difference(our_routes.union(competitor_routes))
 print("Destinations neither airline flies to:", destinations_neither_airline_flies_to)
+
+# Given list of customer IDs
+customer_ids = ["C001", "C002", "C003", "C002", "C001", "C004"]
+
+# Convert the list to a set to remove duplicates
+unique_customer_ids = set(customer_ids)
+
+# Display the set of unique customer IDs
+print("Unique customer IDs:", unique_customer_ids)
